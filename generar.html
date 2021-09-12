@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Generar QR</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header header--oscuro">
+            <div class="header__container-logo">
+                <a href="" class="header__titulo header__titulo--claro">QR</a>
+                <img src="https://img.icons8.com/ios/50/000000/fsociety-qr.png" alt="logo_header" class="header__img">
+            </div>
+            <!-- Nav -->
+            <nav class="navegation">
+                <ul class="navegation__ul">
+                    <li class="navegation__lista navegation__lista--clara">
+                        <a href="index.html" class="navegation__enlace navegation__enlace--claro">Inicio</a>
+                    </li>
+                    <li class="navegation__lista navegation__lista--clara">
+                        <a href="generar.html" class="navegation__enlace navegation__enlace--claro">Generar QR</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Main -->
+        <main class="main main--claro">
+            <div class="card">
+                <!---->
+                <form action="" class="formulario" id="formulario">
+                    <!-- Grupo:Nombre-->
+                    <div class="formulario__grupo" id="grupo__nombre">
+                        <label for="nombre" class="formulario__label">Nombre</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Laura Isabel Conde">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">
+                            El nombre solo puede contener letras.
+                        </p>
+                    </div>
+        
+                    <!-- Grupo:Apodo-->
+                    <div class="formulario__grupo" id="grupo__apodo">
+                        <label for="apodo" class="formulario__label">Apodo</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="apodo" id="apodo" placeholder="Maldita">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">
+                            El apodo solo puede ser de 4 a 16 digitos y solo puede contener numero, letras y guion bajo.
+                        </p>
+                    </div>
+        
+                    <!-- Grupo:Correo-->
+                    <div class="formulario__grupo" id="grupo__correo">
+                        <label for="correo" class="formulario__label">Correo</label>
+                        <div class="formulario__grupo-input">
+                            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="ciel@maldita.co">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">
+                            El correo solo piede contener letras, numeros, puntos y guion bajo.
+                        </p>
+                    </div>
+        
+                    <!-- Grupo:Telefono-->
+                    <div class="formulario__grupo" id="grupo__telefono">
+                        <label for="telefono" class="formulario__label">Telefono</label>
+                        <div class="formulario__grupo-input">
+                            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="3147713647">
+                            <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                        </div>
+                        <p class="formulario__input-error">
+                            El telefono solo piede contener numeros y el maximo son 14 digitos.
+                        </p>
+                    </div>
+        
+                    <div class="formulario__mensaje" id="formulario__mensaje">
+                        <p><i class="fas fa-exclamation-circle"></i> <b>Error</b>
+                        Por favor rellene el los datos correctamente. </p>
+                    </div>
+        
+                    <div class="formulario__grupo formulario__grupo-btn-enviar">
+                        <button type="submit" class="formulario__btn">Enviar</button>
+                        <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"> El formulario se envio exitosamente!</p>
+                    </div>
+                </form>
+                <!---->
+                <div class="card__img-container">
+                    <img src="" alt="" class="card__img">
+                </div>
+            </div>
+        </main>
+        <!-- Foooter-->
+        <footer class="footer">
+            <h3 class="footer__mensaje">
+                Pagina Elavorada Por
+            </h3>
+            <p class="footer_mienbros">
+                Juan David Corrales Linares<br>
+                Jeferson David Naranjo
+            </p>
+
+            <div class="media">
+                <a href="" class="media__redes">
+                    <img src="img/face.png" alt="logog_facebook" class="media__logo">
+                </a>
+                <a href="" class="media__redes">
+                    <img src="img/insta.png" alt="logo_insta" class="media__logo">
+                </a>
+                <a href="" class="media__redes">
+                    <img src="img/uni_logo.png" alt="logo_uni" class="media__logo">
+                </a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
