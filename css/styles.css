@@ -1,0 +1,227 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/*______________________Heade______________________*/
+.header {
+    padding: 10px 30px;
+    background-color: #232A2F;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header__container-logo {
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+}
+
+.header__titulo {
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    color: white;
+    font-size: 40px;
+    letter-spacing: 3px;
+    user-select: none;
+}
+
+.header__img {
+    display: inline-block;
+    width: 60px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.navegation__ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navegation__lista {
+    display: inline-block;
+    border-radius: 8px;
+    transition: all .3s linear;
+    margin: 0 10px;
+    user-select: none;
+}
+    .navegation__lista:hover {
+        background-color: black;
+    }
+
+.navegation__enlace {
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    color: #a5a3a3;
+    font-size: 20px;
+    transition: all .3s linear;
+    display: inline-block;
+    user-select: none;
+}
+
+    .navegation__enlace:hover {
+        color: white;
+    }
+
+/*______________________Main______________________*/
+.main {
+    background-color: #232A2F;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+    min-height: 350px;
+}
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.main___titulo-principal {
+    font-size: 10vw;;
+    color: white;
+    margin: 0;
+    transition: .3s ease-in;
+    user-select: none;
+}
+
+    .main___titulo-principal:hover {
+        text-shadow: 8px 10px #000;
+        font-size: 12vw;
+    }
+
+.main__img-container {
+    background-color: white;
+    width: 20vw;
+    height:20vw;
+    min-width: 150px;
+    min-height: 150px;
+    border-radius: 100%;
+    border: black solid 3px;
+    box-shadow: 5px 5px 25px black;
+    margin: 10px;
+
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.main__img-qr {
+    width: 15vw;
+    height: 15vw;
+    min-width: 120px;
+    min-height: 120px;
+    margin: auto;
+
+    animation-name: girar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-timing-function:cubic-bezier(1, -1.14, 0, 1.43) ; 
+}
+
+.main__comentario {
+    color:rgb(201, 195, 195);
+    font-size: 3vw;
+    user-select: none;
+}
+
+/*______________________Footer______________________*/
+.footer {
+    padding: 20px;
+    color: white;
+    background-color:#0B090A;
+    box-shadow: 5px 5px 25px black;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    user-select: none;
+}
+
+.media {
+    display: flex;
+    align-content: space-between;
+    flex-direction: row;
+}
+
+.media__logo {
+    width: 35px;
+        height: 35px;
+        overflow: hidden;
+        margin: 0 5px;
+        display: inline-block;
+}
+/*______________________Animations______________________*/
+@keyframes girar {
+    0% {
+        transform: rotate(0);
+    }
+
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*______________________Mediaqueries______________________*/
+/* @media screen and (max-width: 800px) {
+    .main___titulo-principal {
+        font-size: 70px;
+    }
+
+    .main__img-container {
+        width: 300px;
+        height: 300px;
+    }   
+
+    .main__img-qr {
+        width: 240px;
+        height: 240px;
+    }
+} */
+
+/* @media screen and (max-width: 560px) {
+    .main___titulo-principal {
+        font-size: 50px;
+    }
+
+    .main__img-container {
+        width: 300px;
+        height: 300px;
+    }   
+
+    .main__img-qr {
+        width: 240px;
+        height: 240px;
+    }
+} */
