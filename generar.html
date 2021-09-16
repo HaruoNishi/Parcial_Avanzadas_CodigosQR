@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/qrious@4.0.2/dist/qrious.js"></script>
+    <!-- <script src="https://unpkg.com/qrious@4.0.2/dist/qrious.js"></script> -->
     <link rel="stylesheet" href="css/styles.css">
     <title>Generar QR</title>
 </head>
@@ -92,9 +92,11 @@
                     </div>
                 </form>
                 <!---->
-                <div class="card__img-container">
-                    <img src="" alt="" class="card__img" id="codigo">
+                <div class="card__img-container" id="codigo">
+                    <!-- <img src="" alt="" class="card__img" id="codigo"> -->
                 </div>
+
+                <div id="qrcode"></div>
             </div>
         </main>
         <!-- Foooter-->
@@ -121,5 +123,6 @@
         </footer>
     </div>
     <script src="js/scripts.js"></script>
+    <script src="js/qrcode.min.js"></script>
 </body>
 </html>

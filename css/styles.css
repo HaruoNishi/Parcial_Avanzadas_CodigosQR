@@ -170,7 +170,7 @@ body {
 .card {
     width: 55%;
     height: 300px;
-    background-color: #660708;
+    background-color: #B9C3CB;
     padding: 10px;
     padding-left: 90px;
     border-radius: 10px;
@@ -195,7 +195,7 @@ body {
     font-weight:  700;
     padding: 10px;
     cursor: pointer;
-    color: #fff;
+    color: #000;
 }
 
 .formulario__grupo-input {
@@ -312,7 +312,7 @@ body {
     border: 3px solid #bb2929;
 }
 
-.card__img-container {
+/* .card__img-container {
     background-color: #ffff;
     width: 200px;
     height: 200px;
@@ -320,7 +320,7 @@ body {
     border-radius: 5px;
     border: #000 solid 2px;
     box-shadow: 5px 5px 5px black;
-}
+} */
 
 /*______________________Footer______________________*/
 .footer {
@@ -395,7 +395,7 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-    .card__img-container {
+    /* .card__img-container {
         width: 140px;
         height: 140px;
     }
@@ -403,7 +403,7 @@ body {
     .card__img {
         width: 130px;
         height: 130px;
-    }
+    } */
 }
 
 @media screen and (max-width: 741px) {
