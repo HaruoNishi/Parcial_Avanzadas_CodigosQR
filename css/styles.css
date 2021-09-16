@@ -169,12 +169,12 @@ body {
 /*______________________Main/Card______________________*/
 .card {
     width: 55%;
-    height: 300px;
+    height: 350px;
     background-color: #B9C3CB;
     padding: 10px;
     padding-left: 90px;
     border-radius: 10px;
-    box-shadow: 5px 5px 25px black;
+    box-shadow: 0px 0px 10px black;
     margin: 15px;
 
     display: flex;
@@ -188,6 +188,8 @@ body {
     grid-template-columns: 1fr 1fr;
     gap:15px;
     width: 550px;
+    border-right: #000 solid 2px;
+    padding-right: 20px;
 }
 
 .formulario__label {
@@ -216,7 +218,6 @@ body {
 .formulario__input:focus {
     border: 3px solid #0075ff;
     outline: none;
-
 }
 
 .formulario__input-error {
@@ -244,7 +245,7 @@ body {
 
 .formulario__mensaje {
     height: 45px;
-    width: 93%;
+    width: 100%;
     line-height: 45px;
     background-color: #f66060;
     padding: 0 15px;
@@ -321,6 +322,9 @@ body {
     border: #000 solid 2px;
     box-shadow: 5px 5px 5px black;
 } */
+.card__img-container {
+    margin: auto;
+}
 
 /*______________________Footer______________________*/
 .footer {
@@ -392,22 +396,23 @@ body {
         height: 610px;
         padding-left: 10px;
     }
-}
 
-@media screen and (max-width: 800px) {
-    /* .card__img-container {
-        width: 140px;
-        height: 140px;
+    .formulario {
+        border-right:none;
+        border-bottom: #000 solid 2px;
+        padding:10px;
     }
-
-    .card__img {
-        width: 130px;
-        height: 130px;
-    } */
 }
 
 @media screen and (max-width: 741px) {
     .card {
         width: 90%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .card {
+        margin-top: 20px;
+        height: 700px;
     }
 }

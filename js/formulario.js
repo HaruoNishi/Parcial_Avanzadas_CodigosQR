@@ -68,7 +68,10 @@ function capturarDatos() {
     return cadena;
 }
 
-var qrcode = new QRCode(document.getElementById('qrcode'));
+var qrcode = new QRCode(document.getElementById('codigo'), {
+    width: 190,
+    height: 190
+});
 /* */
 formulario.addEventListener('submit' , (e) =>{
     e.preventDefault();
@@ -76,15 +79,9 @@ formulario.addEventListener('submit' , (e) =>{
     if(campos.nombre && campos.apodo && campos.correo && campos.telefono) {
         /*____________*/
         var datos = capturarDatos();
-        console.log(datos);
-        qrcode.makeCode(datos); 
+        qrcode.makeCode(datos);
         /*____________*/
         formulario.reset();
-        document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo')
-        setTimeout(() =>{
-            document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo')
-        }, 5000);   
-
         document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
             icono.classList.remove('formulario__grupo-correcto');
         });
