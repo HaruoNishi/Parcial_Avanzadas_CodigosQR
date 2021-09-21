@@ -2,6 +2,7 @@
 const formulario =document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
+
 const expresiones = {
 	apodo: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
@@ -63,7 +64,7 @@ function capturarDatos() {
     var apodo = document.getElementById('apodo').value;
     var correo = document.getElementById('correo').value;
     var telefono = document.getElementById('telefono').value;
-    var datos = [nombre, apodo, correo, telefono];
+    var datos = [`Nombre: ${nombre}`,`Apodo: ${apodo}`,`Correo: ${correo}`,`Telefono: ${telefono}`];
     var cadena = datos.join();
     return cadena;
 }
@@ -75,7 +76,7 @@ var qrcode = new QRCode(document.getElementById('codigo'), {
 /* */
 formulario.addEventListener('submit' , (e) =>{
     e.preventDefault();
-
+    
     if(campos.nombre && campos.apodo && campos.correo && campos.telefono) {
         /*____________*/
         var datos = capturarDatos();
