@@ -1,7 +1,8 @@
 
 const formulario =document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
-
+const $imagen = document.querySelector('#codigo'),
+        $boton = document.querySelector('#btnDescargar');
 
 const expresiones = {
 	apodo: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
@@ -80,7 +81,19 @@ formulario.addEventListener('submit' , (e) =>{
     if(campos.nombre && campos.apodo && campos.correo && campos.telefono) {
         /*____________*/
         var datos = capturarDatos();
-        qrcode.makeCode(datos);
+        // qrcode.makeCode(datos);
+        var img = document.querySelector('#codigo');
+        img.classList.add('card__img-activo');
+        new QRious({
+            element: $imagen,
+            value: datos, // La URL o el texto
+            backgroundAlpha: 1, // 0 para fondo transparente
+            foreground: "#000", // Color del QR
+            level: "H", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
+        });
+        var btn = document.querySelector('#btnDescargar');
+        btn.classList.remove('formulario__btn-inactivo');
+        
         /*____________*/
         formulario.reset();
         document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
@@ -88,8 +101,14 @@ formulario.addEventListener('submit' , (e) =>{
         });
 
         document.getElementById('formulario__mensaje').classList.remove('formulario__mensaje-activo');
-        /* Prueba con QR*/
     } else {
         document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
     }
 });
+
+$boton.onclick = () => {
+    const enlace = document.createElement("a");
+    enlace.href = $imagen.src;
+    enlace.download = "Código QR Datos del Formulario";
+    enlace.click();
+}

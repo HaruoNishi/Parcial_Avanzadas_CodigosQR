@@ -4,8 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <script src="https://unpkg.com/qrious@4.0.2/dist/qrious.js"></script> -->
+    <script src="js/qrcode.min.js"></script>
+    <script src="https://unpkg.com/qrious@4.0.2/dist/qrious.js"></script>
+    <script src="https://kit.fontawesome.com/554f011c4b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <title>Generar QR</title>
 </head>
 <body>
@@ -30,6 +35,7 @@
         </header>
         <!-- Main -->
         <main class="main main--claro">
+            <h1>Por Formulario</h1>
             <div class="card">
                 <form action="" class="formulario" id="formulario">
                     <!-- Grupo:Nombre-->
@@ -43,8 +49,8 @@
                             El nombre solo puede contener letras.
                         </p>
                     </div>
-        
-                    <!-- Grupo:Apodo-->
+            
+                        <!-- Grupo:Apodo-->
                     <div class="formulario__grupo" id="grupo__apodo">
                         <label for="apodo" class="formulario__label">Apodo</label>
                         <div class="formulario__grupo-input">
@@ -55,7 +61,7 @@
                             El apodo solo puede ser de 4 a 16 digitos y solo puede contener numero, letras y guion bajo.
                         </p>
                     </div>
-        
+            
                     <!-- Grupo:Correo-->
                     <div class="formulario__grupo" id="grupo__correo">
                         <label for="correo" class="formulario__label">Correo</label>
@@ -64,10 +70,10 @@
                             <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
                         <p class="formulario__input-error">
-                            El correo solo piede contener letras, numeros, puntos y guion bajo.
+                            El correo solo puede contener letras, numeros, puntos y guion bajo.
                         </p>
                     </div>
-        
+            
                     <!-- Grupo:Telefono-->
                     <div class="formulario__grupo" id="grupo__telefono">
                         <label for="telefono" class="formulario__label">Telefono</label>
@@ -76,10 +82,10 @@
                             <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
                         <p class="formulario__input-error">
-                            El telefono solo piede contener numeros y el maximo son 14 digitos.
+                            El telefono solo puede contener numeros y el maximo son 14 digitos.
                         </p>
                     </div>
-        
+            
                     <div class="formulario__mensaje" id="formulario__mensaje">
                         <p><i class="fas fa-exclamation-circle"></i> <b>Error</b>
                         Por favor rellene los datos correctamente. </p>
@@ -87,35 +93,15 @@
                     <!-- Boton -->
                     <div class="formulario__grupo formulario__grupo-btn-enviar">
                         <button type="submit" class="formulario__btn">Generar</button>
-                        <!-- <p class="formulario__mensaje-exito" id="formulario__mensaje-exito"> El formulario se envio exitosamente!</p> -->
                     </div>
                 </form>
-                <!---->
-                <div class="card__img-container" id="codigo">
-                    <!-- <img src="" alt="" class="card__img" id="codigo"> -->
+                <div class="img__container">
+                    <img src="" alt="" class="card__img" id="codigo">
+                    <button  class="formulario__btn formulario__btn-darcarga formulario__btn-inactivo" id="btnDescargar">Descargar</button>
                 </div>
             </div>
-
-            <!--____Segunda  Parte____-->
-            <!-- <div class="card card-url">
-                <h1>Usando una URL</h1>
-                <div class="form-url">
-                    <div class="form-url__container">
-                        <form action="" class="form__url" id="formulario-url">
-                            <label for="url" class="formulario__label">URL</label>
-                            <input type="text" class="formulario__input" name="url" id="url" placeholder="Inserte una url">
-                        </form>
-                        <div class="formulario__grupo formulario__grupo-btn-enviar">
-                            <button type="submit" class="formulario__btn">Generar</button>  
-                        </div>
-                    </div>
-                    <div class="card__img-container" id="codigo">
-                        <!-- <img src="" alt="" class="card__img" id="codigo"> -->
-                    </div>
-                </div>
-            </div>
-        </main> -->
-        <!-- Foooter-->
+        </main> 
+        <!-- Foooter--> 
         <footer class="footer">
             <h3 class="footer__mensaje">
                 Pagina Elavorada Por
@@ -138,8 +124,7 @@
             </div>
         </footer>
     </div>
-    <script src="js/qrcode.min.js"></script>
+    
     <script src="js/formulario.js"></script>
-    <script src="https://kit.fontawesome.com/554f011c4b.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto Slab', serif;
 }
 .container {
     display: flex;
@@ -184,21 +185,22 @@ body {
     flex-wrap: wrap;
 }
 
-.card-url {
-    flex-direction: column;
-    justify-content: center;
+.card__img {
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    border: #000 solid 2px;
+    display: none;
 }
 
-.form-url {
+.card__img-activo {
+    display: block;
+}
+
+.form__container {
     display: flex;
-}
-
-.form__url {
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0;
-    margin: 10px;
-    width: 400px;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .formulario {
@@ -288,17 +290,34 @@ body {
 .formulario__btn {
     height: 45px;
     line-height: 45px;
-    width: 30%;
+    width: 25%;
     background-color: #000;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: .1s ease all;
+    transition: .4s ease all;
 }
 
 .formulario__btn:hover {
     background-color: rgb(36, 35, 35);
+    width: 32%;
+}
+
+.formulario__btn-inactivo {
+    display: none;
+}
+
+.formulario__btn-darcarga {
+    margin: auto;
+    margin-top: 10px;
+    width: 65%;
+    background-color: #bb2929;
+}
+
+.formulario__btn-darcarga:hover {
+    background-color: #940e0e;
+    width: 95%;
 }
 
 .formulario__mensaje-exito {
@@ -331,25 +350,24 @@ body {
     border: 3px solid #bb2929;
 }
 
-/* .card__img-container {
-    background-color: #ffff;
-    width: 200px;
-    height: 200px;
-    margin: auto;
-    border-radius: 5px;
-    border: #000 solid 2px;
-    box-shadow: 5px 5px 5px black;
-} */
 .card__img-container {
     margin: auto;
 }
 
+.img__container {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 /*______________________Footer______________________*/
 .footer {
     padding: 20px;
     color: white;
     background-color:#0B090A;
-    box-shadow: 5px 5px 25px black;
     text-align: center;
 
     display: flex;
@@ -371,6 +389,8 @@ body {
         margin: 0 5px;
         display: inline-block;
 }
+
+
 /*______________________Animations______________________*/
 @keyframes girar {
     0% {
@@ -411,7 +431,7 @@ body {
 
 @media screen and (max-width: 1431px) {
     .card {
-        height: 610px;
+        height: 700px;
         padding-left: 10px;
     }
 
@@ -431,6 +451,12 @@ body {
 @media screen and (max-width: 760px) {
     .card {
         margin-top: 20px;
-        height: 700px;
+        height: 800px;
+    }
+
+    .card__img {
+        height: 200px;
+        width: 200px;
+        margin: auto;
     }
 }
