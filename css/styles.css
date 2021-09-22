@@ -23,14 +23,6 @@ body {
     flex-wrap: wrap;
 }
 
-.header__prueba {
-    background-color: #000000;
-    opacity: 1;
-    background-image: radial-gradient(#f3f3f3 1.9000000000000001px, #000000 1.9000000000000001px);
-    background-size: 38px 38px;
-}
-
-
 .header__container-logo {
     display: flex;
     align-content: space-between;
@@ -83,15 +75,16 @@ body {
     user-select: none;
 }
 
-.navegation__enlace:hover {
-    color: #000;
-}
+    .navegation__enlace:hover {
+        color: #000;
+    }
 
 /*______________________Main______________________*/
 .main {
     background-color: #232A2F;
     background-image: url("/img/fondo.png");
     background-repeat: no-repeat;
+
     display: flex;
     flex-direction: column;
     justify-content: space-around;
