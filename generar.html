@@ -16,37 +16,37 @@
 <body>
     <div class="container">
         <!-- Header -->
-        <header class="header header--oscuro">
+        <header class="header">
             <div class="header__container-logo">
-                <a href="" class="header__titulo header__titulo--claro">QR</a>
-                <img src="https://img.icons8.com/ios/50/000000/fsociety-qr.png" alt="logo_header" class="header__img">
+                <a href="" class="header__titulo ">QR</a>
+                <img src="https://img.icons8.com/external-tulpahn-flat-tulpahn/64/000000/external-qr-code-mobile-user-interface-tulpahn-flat-tulpahn.png" alt="logo_header" class="header__img">
             </div>
             <!-- Nav -->
             <nav class="navegation">
                 <ul class="navegation__ul">
-                    <li class="navegation__lista navegation__lista--clara">
-                        <a href="index.html" class="navegation__enlace navegation__enlace--claro">Inicio</a>
+                    <li class="navegation__lista ">
+                        <a href="index.html" class="navegation__enlace ">Inicio</a>
                     </li>
-                    <li class="navegation__lista navegation__lista--clara">
-                        <a href="generar.html" class="navegation__enlace navegation__enlace--claro">Generar QR</a>
+                    <li class="navegation__lista">
+                        <a href="generar.html" class="navegation__enlace ">Generar QR</a>
                     </li>
                 </ul>
             </nav>
         </header>
         <!-- Main -->
-        <main class="main main--claro">
-            <h1>Por Formulario</h1>
+        <main class="main main-azul">
+            <h1 class="main__titulo-card">Por Formulario</h1>
             <div class="card">
                 <form action="" class="formulario" id="formulario">
                     <!-- Grupo:Nombre-->
                     <div class="formulario__grupo" id="grupo__nombre">
                         <label for="nombre" class="formulario__label">Nombre</label>
                         <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Laura Isabel Conde">
+                            <input type="text" class="formulario__input" name="nombre" id="nombre" autocomplete="off" placeholder="Juan Corrales">
                             <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
                         <p class="formulario__input-error">
-                            El nombre solo puede contener letras.
+                            <b>El nombre solo puede contener letras.</b>
                         </p>
                     </div>
             
@@ -54,11 +54,11 @@
                     <div class="formulario__grupo" id="grupo__apodo">
                         <label for="apodo" class="formulario__label">Apodo</label>
                         <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="apodo" id="apodo" placeholder="Maldita">
+                            <input type="text" class="formulario__input" name="apodo" id="apodo" autocomplete="off" placeholder="Juan123">
                             <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
                         <p class="formulario__input-error">
-                            El apodo solo puede ser de 4 a 16 digitos y solo puede contener numero, letras y guion bajo.
+                            <b>El apodo solo puede ser de 4 a 16 digitos y solo puede contener numero, letras y guion bajo.</b>
                         </p>
                     </div>
             
@@ -66,11 +66,11 @@
                     <div class="formulario__grupo" id="grupo__correo">
                         <label for="correo" class="formulario__label">Correo</label>
                         <div class="formulario__grupo-input">
-                            <input type="email" class="formulario__input" name="correo" id="correo" placeholder="ciel@maldita.co">
+                            <input type="email" class="formulario__input" name="correo" id="correo"  autocomplete="off" placeholder="juan@correo.co">
                             <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
                         <p class="formulario__input-error">
-                            El correo solo puede contener letras, numeros, puntos y guion bajo.
+                            <b>El correo solo puede contener letras, numeros, puntos y guion bajo.</b>
                         </p>
                     </div>
             
@@ -78,11 +78,11 @@
                     <div class="formulario__grupo" id="grupo__telefono">
                         <label for="telefono" class="formulario__label">Telefono</label>
                         <div class="formulario__grupo-input">
-                            <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="3147713647">
+                            <input type="text" class="formulario__input" name="telefono" id="telefono"  autocomplete="off" placeholder="3147413777">
                             <i class="formulario__validacion-estado fas fa-times-circle"></i>
                         </div>
                         <p class="formulario__input-error">
-                            El telefono solo puede contener numeros y el maximo son 14 digitos.
+                            <b>El telefono solo puede contener numeros y el maximo son 14 digitos.</b>
                         </p>
                     </div>
             
@@ -112,14 +112,17 @@
             </p>
 
             <div class="media">
-                <a href="" class="media__redes">
+                <a href="https://www.facebook.com/UniversidadDistrital/" class="media__redes" target="_blank">
                     <img src="img/face.png" alt="logog_facebook" class="media__logo">
                 </a>
-                <a href="" class="media__redes">
+                <a href="https://www.instagram.com/universidaddistrital/?hl=es" class="media__redes" target="_blank">
                     <img src="img/insta.png" alt="logo_insta" class="media__logo">
                 </a>
-                <a href="" class="media__redes">
+                <a href="https://www.udistrital.edu.co/inicio" class="media__redes" target="_blank">
                     <img src="img/uni_logo.png" alt="logo_uni" class="media__logo">
+                </a>
+                <a href="https://github.com/HaruoNishi" class="media__redes" target="_blank">
+                    <img src="img/github.png" alt="logo_github" class="media__logo">
                 </a>
             </div>
         </footer>

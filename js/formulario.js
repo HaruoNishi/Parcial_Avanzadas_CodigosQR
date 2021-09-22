@@ -59,7 +59,6 @@ inputs.forEach((input) =>{
     input.addEventListener('blur', validarFormulario);
 });
 
-/* Prueba con Datos*/
 function capturarDatos() {
     var nombre = document.getElementById('nombre').value;
     var apodo = document.getElementById('apodo').value;
@@ -70,10 +69,6 @@ function capturarDatos() {
     return cadena;
 }
 
-var qrcode = new QRCode(document.getElementById('codigo'), {
-    width: 190,
-    height: 190
-});
 /* */
 formulario.addEventListener('submit' , (e) =>{
     e.preventDefault();
@@ -81,7 +76,6 @@ formulario.addEventListener('submit' , (e) =>{
     if(campos.nombre && campos.apodo && campos.correo && campos.telefono) {
         /*____________*/
         var datos = capturarDatos();
-        // qrcode.makeCode(datos);
         var img = document.querySelector('#codigo');
         img.classList.add('card__img-activo');
         new QRious({
