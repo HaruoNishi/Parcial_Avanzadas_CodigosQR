@@ -103,8 +103,8 @@ body {
     color: #fff;
     text-shadow: 3px 5px #000;
 
-    -webkit-animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.2s both;
-	animation: tracking-in-expand 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.2s both;
+    -webkit-animation:acordeon 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.2s both;
+	animation: acordeon 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.2s both;
 }
 
 .main__container {
@@ -165,8 +165,8 @@ body {
     font-size: 3vw;
     user-select: none;
 
-    -webkit-animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    -webkit-animation: aparecer 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	animation: aparecer 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
 }
 /*______________________Main/Card______________________*/
 .card {
@@ -299,8 +299,8 @@ body {
     cursor: pointer;
     transition: .4s ease all;
 
-    -webkit-animation: jello-horizontal 0.9s both;
-	animation: jello-horizontal 0.9s both;
+    -webkit-animation: helatina 0.9s both;
+	animation: helatina 0.9s both;
 }
 
 .formulario__btn:hover {
@@ -400,8 +400,8 @@ body {
     margin: 0 5px;
     display: inline-block;
 
-    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
-	animation: heartbeat 1.5s ease-in-out infinite both;
+    -webkit-animation: latido 1.5s ease-in-out infinite both;
+	animation: latido 1.5s ease-in-out infinite both;
 }
 
 
@@ -428,7 +428,7 @@ body {
     }
 }
 /*Ani titulo*/
-@-webkit-keyframes tracking-in-expand {
+@-webkit-keyframes acordeon {
     0% {
         letter-spacing: -0.5em;
         opacity: 0;
@@ -441,7 +441,7 @@ body {
     }
 }
 
-@keyframes tracking-in-expand {
+@keyframes acordeon {
     0% {
         letter-spacing: -0.5em;
         opacity: 0;
@@ -456,7 +456,7 @@ body {
     }
 }
 /*Ani comentario*/
-@-webkit-keyframes text-focus-in {
+@-webkit-keyframes aparecer {
     0% {
         -webkit-filter: blur(12px);
         filter: blur(12px);
@@ -470,7 +470,7 @@ body {
     }
 }
 
-@keyframes text-focus-in {
+@keyframes aparecer {
     0% {
         -webkit-filter: blur(12px);
         filter: blur(12px);
@@ -484,7 +484,7 @@ body {
 }
 /*Ani Redes*/
 
-@-webkit-keyframes heartbeat {
+@-webkit-keyframes latido {
     from {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -523,7 +523,7 @@ body {
     }
 }
 
-@keyframes heartbeat {
+@keyframes latido {
     from {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -563,7 +563,7 @@ body {
 }
 
 /*Ani Boton*/
-@-webkit-keyframes jello-horizontal {
+@-webkit-keyframes helatina {
     0% {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);
@@ -600,7 +600,7 @@ body {
     }
 }
 
-@keyframes jello-horizontal {
+@keyframes helatina {
     0% {
         -webkit-transform: scale3d(1, 1, 1);
         transform: scale3d(1, 1, 1);

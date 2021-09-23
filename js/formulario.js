@@ -74,7 +74,7 @@ formulario.addEventListener('submit' , (e) =>{
     e.preventDefault();
     
     if(campos.nombre && campos.apodo && campos.correo && campos.telefono) {
-        /*____________*/
+        
         var datos = capturarDatos();
         var img = document.querySelector('#codigo');
         img.classList.add('card__img-activo');
@@ -86,9 +86,7 @@ formulario.addEventListener('submit' , (e) =>{
             level: "H", // Puede ser L,M,Q y H (L es el de menor nivel, H el mayor)
         });
         var btn = document.querySelector('#btnDescargar');
-        btn.classList.remove('formulario__btn-inactivo');
-        
-        /*____________*/
+        btn.classList.remove('formulario__btn-inactivo')
         formulario.reset();
         document.querySelectorAll('.formulario__grupo-correcto').forEach((icono) => {
             icono.classList.remove('formulario__grupo-correcto');
