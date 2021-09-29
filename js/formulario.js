@@ -4,6 +4,14 @@ const inputs = document.querySelectorAll('#formulario input');
 const $imagen = document.querySelector('#codigo'),
         $boton = document.querySelector('#btnDescargar');
 
+/* Carga*/
+window.addEventListener('load', () => {
+    const contenedor_loader = document.querySelector('.contenedor_loader');
+    contenedor_loader.style.opacity = 0
+    contenedor_loader.style.visibility = 'hidden'
+});
+
+/*Expresiones Regulares*/
 const expresiones = {
 	apodo: /^[a-zA-Z0-9\_\-]{4,16}$/, // Letras, numeros, guion y guion_bajo
 	nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
@@ -77,7 +85,9 @@ formulario.addEventListener('submit' , (e) =>{
         
         var datos = capturarDatos();
         var img = document.querySelector('#codigo');
+        var imgEspera = document.querySelector('#img_espera');
         img.classList.add('card__img-activo');
+        imgEspera.classList.add('card__img-espera-inactivo');
         new QRious({
             element: $imagen,
             value: datos, // La URL o el texto

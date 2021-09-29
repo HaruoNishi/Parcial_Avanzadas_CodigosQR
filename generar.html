@@ -10,9 +10,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link rel="shorcut icon" type="image/x-icon" href="img/qr.ico">
     <title>Generar QR</title>
 </head>
 <body>
+    <!--Pantalla de Carga-->
+    <div class="contenedor_loader">
+        <div class="loader"></div>
+    </div>
+    <!---->
     <div class="container">
         <!-- Header -->
         <header class="header">
@@ -95,8 +101,9 @@
                     </div>
                 </form>
                 <div class="img__container">
-                    <img src="" alt="" class="card__img" id="codigo">
+                    <img src="" alt="Codigo QR" class="card__img" id="codigo">
                     <button  class="formulario__btn formulario__btn-darcarga formulario__btn-inactivo" id="btnDescargar">Descargar</button>
+                    <img src="img/qr_espera.png" alt="" class="card__img-espera" id="img_espera">
                 </div>
             </div>
         </main> 
